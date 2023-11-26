@@ -1,0 +1,24 @@
+{{#> page/page class="profile-page"}}
+
+<link rel="stylesheet" href="/src/pages/profile-page/profile-page.scss" />
+
+<div class="profile-page__container">
+    {{> back-button/back-button}}
+    <div class="profile-page__content">
+        <div class="profile-page__avatar">
+            <img src="/public/assets/picture-icon.svg" alt="avatar" />
+        </div>
+        <h2 class="profile-page__username">Иван</h2>
+
+        <div class="profile-page__profile-info-container">
+            {{> profile-info/profile-info title="Почта" description="pochta@yandex.ru"}}
+            {{> profile-info/profile-info title="Логин" description="ivanivanov"}}
+            {{> profile-info/profile-info title="Имя" description="Иван"}}
+            {{> profile-info/profile-info title="Фамилия" description="Иванов"}}
+            {{> profile-info/profile-info title="Имя в чате" description="Иван"}}
+            {{> profile-info/profile-info title="Телефон" description="+7 (909) 967 30 30"}}
+        </div>
+    </div>
+</div>
+
+{{/page/page}}

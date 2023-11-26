@@ -1,0 +1,18 @@
+{{#> page/page class="sign-in-page"}}
+<link rel="stylesheet" href="/src/pages/sign-in-page/sign-in-page.scss" />
+<div>
+    {{#> card/card}}
+    {{#> auth-title/auth-title}}
+    Вход
+    {{/auth-title/auth-title}}
+
+    <div class="sign-in-page__inputs">
+        {{> input/input type="text" label="Логин" placeholder="Логин"}}
+        {{> input/input type="password" label="Пароль" placeholder="Пароль"}}
+    </div>
+
+    {{> button/button label="Авторизоваться" class="sign-in-page__auth-btn"}}
+    {{> link/link to="/src/pages/sign-up-page/sign-up-page.html" class="sign-in-page__link" text="Нет аккаунта?"}}
+    {{/card/card}}
+</div>
+{{/page/page}}

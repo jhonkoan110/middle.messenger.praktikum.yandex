@@ -1,0 +1,17 @@
+@import "/src/styles/variables.scss";
+
+.page {
+    position: relative;
+    height: 100%;
+    width: $app-width;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__main-link {
+        position: absolute;
+        top: 2rem;
+        left: 2rem;
+    }
+}

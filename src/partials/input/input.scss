@@ -1,0 +1,15 @@
+@import "/src/styles/variables.scss";
+
+.input {
+    padding: 0.7rem 0;
+    border: none;
+    border-bottom: 1px solid $blue;
+    width: 100%;
+    outline: none;
+    display: block;
+    font-weight: 500;
+
+    &::placeholder {
+        color: $grey;
+    }
+}

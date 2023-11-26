@@ -1,0 +1,23 @@
+{{#> page/page class="sign-up-page"}}
+<link rel="stylesheet" href="/src/pages/sign-up-page/sign-up-page.scss" />
+<div>
+    {{#> card/card}}
+    {{#>auth-title/auth-title}}
+    Регистрация
+    {{/auth-title/auth-title}}
+
+    <div class="sign-up-page__inputs">
+        {{> input/input type="text" placeholder="Почта"}}
+        {{> input/input type="text" placeholder="Логин"}}
+        {{> input/input type="text" placeholder="Имя"}}
+        {{> input/input type="text" placeholder="Фамилия"}}
+        {{> input/input type="text" placeholder="Телефон"}}
+        {{> input/input type="password" placeholder="Пароль"}}
+        {{> input/input type="password" placeholder="Пароль ещё раз"}}
+    </div>
+
+    {{>button/button class="sign-up-page__auth-btn" label="Зарегистрироваться"}}
+    {{> link/link to="/src/pages/sign-in-page/sign-in-page.html" class="sign-up-page__link" text="Войти"}}
+    {{/card/card}}
+</div>
+{{/page/page}}

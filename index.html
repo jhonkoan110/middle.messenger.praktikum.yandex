@@ -4,9 +4,16 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Web-Messenger</title>
+        <link rel="stylesheet" href="src/styles/fonts.scss" />
+        <link rel="stylesheet" href="src/style.scss" />
     </head>
     <body>
-        <div id="root"></div>
+        {{>link/link to="/src/pages/sign-in-page/sign-in-page.html" text="Логин"}}
+        {{>link/link to="/src/pages/sign-up-page/sign-up-page.html" text="Регистрация"}}
+        {{>link/link to="/src/pages/internal-error-page/internal-error-page.html" text="500"}}
+        {{>link/link to="/src/pages/not-found-page/not-found-page.html" text="404"}}
+        {{>link/link to="/src/pages/profile-page/profile-page.html" text="Профиль"}}
+
         <script type="module" src="src/index.ts"></script>
     </body>
 </html>

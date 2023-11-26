@@ -1,0 +1,13 @@
+@import "/src/styles/variables.scss";
+
+.btn {
+    border: none;
+    outline: none;
+    background-color: $blue;
+    color: $white;
+    display: block;
+
+    &:hover {
+        cursor: pointer;
+    }
+}

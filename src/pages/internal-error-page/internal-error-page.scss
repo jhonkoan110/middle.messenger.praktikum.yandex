@@ -1,0 +1,17 @@
+.internal-error-page {
+    text-align: center;
+    flex-direction: column;
+
+    &__heading {
+        font-size: 4rem;
+    }
+
+    &__description {
+        margin: 2rem 0 0;
+        font-size: 2rem;
+    }
+
+    &__link {
+        margin: 7rem 0 0;
+    }
+}

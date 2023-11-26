@@ -1,0 +1,22 @@
+.sign-in-page {
+    &__inputs {
+        margin: 5.7rem 0 0;
+        display: flex;
+        flex-direction: column;
+        gap: 2.5rem;
+    }
+
+    &__auth-btn {
+        margin: 17rem 0 0;
+        width: 100%;
+        text-align: center;
+        padding: 1.2rem 0;
+        border-radius: 8px;
+    }
+
+    &__link {
+        width: 100%;
+        text-align: center;
+        margin: 1.4rem 0 0;
+    }
+}
