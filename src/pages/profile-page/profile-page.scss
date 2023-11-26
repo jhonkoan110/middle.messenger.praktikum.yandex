@@ -9,8 +9,8 @@
     }
 
     &__content {
-        padding: 6rem 0 0;
         display: flex;
+        justify-content: center;
         align-items: center;
         flex-direction: column;
     }
@@ -33,15 +33,27 @@
             top: 0;
             height: 130px;
             width: 130px;
-            background-color: red;
+            background-color: rgba($color: #000000, $alpha: 0.5);
+            color: $white;
             content: "Поменять аватар";
             cursor: pointer;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 1.7rem;
+            font-size: 1.3rem;
             opacity: 0;
             z-index: 0;
+            transition: all 0.2s ease-in-out;
+            box-shadow: 0px -23px 25px 0px rgba(0, 0, 0, 0.17) inset,
+                0px -36px 30px 0px rgba(0, 0, 0, 0.15) inset,
+                0px -79px 40px 0px rgba(0, 0, 0, 0.1) inset,
+                0px 2px 1px rgba(0, 0, 0, 0.06), 0px 4px 2px rgba(0, 0, 0, 0.09),
+                0px 8px 4px rgba(0, 0, 0, 0.09),
+                0px 16px 8px rgba(0, 0, 0, 0.09);
+        }
+
+        &:hover::after {
+            opacity: 1;
         }
     }
 
@@ -55,8 +67,34 @@
         margin: 5rem 0 0;
         width: 510px;
     }
-}
 
-.profile-page__avatar:hover > .profile-page__avatar::after {
-    opacity: 1;
+    &__actions {
+        width: 510px;
+        margin: 5rem 0 0;
+    }
+
+    &__action-btn {
+        background-color: transparent;
+        outline: none;
+        font-size: 1.3rem;
+        font-weight: 600;
+        color: $blue;
+        border: none;
+        display: block;
+        width: 100%;
+        text-align: left;
+        padding: 1rem 0;
+
+        &_red {
+            color: $red;
+        }
+
+        &:not(:last-of-type) {
+            border-bottom: 1px solid $grey-4;
+        }
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
 }
