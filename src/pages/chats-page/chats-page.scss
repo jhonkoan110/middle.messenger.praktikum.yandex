@@ -1,0 +1,23 @@
+@import "/src/styles/variables.scss";
+
+.chats-page {
+    display: grid;
+    grid-template-columns: 310px 1fr;
+    width: 100%;
+
+    &__sidebar {
+        background-color: $grey-2;
+        height: 100%;
+    }
+
+    &__sidebar-profile {
+        padding: 2.1rem 1rem;
+        display: flex;
+        gap: 8px;
+        text-align: right;
+    }
+
+    &__chat-feed {
+        height: 100%;
+    }
+}
